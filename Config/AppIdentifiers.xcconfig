@@ -16,10 +16,10 @@
 
 
 // App identity
-BUNDLE_DISPLAY_NAME = Element Classic
-BASE_BUNDLE_IDENTIFIER = im.vector.app
+BUNDLE_DISPLAY_NAME = Skiris
+BASE_BUNDLE_IDENTIFIER = ai.airistech.skiris
 APPLICATION_GROUP_IDENTIFIER = group.im.vector
-APPLICATION_SCHEME = element
+APPLICATION_SCHEME = skiris
 
 // Team
 DEVELOPMENT_TEAM = 7J4U792NQT

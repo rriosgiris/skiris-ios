@@ -12,30 +12,31 @@ import SwiftUI
 /// Dark theme colors.
 public class DarkColors {
     private static let values = ColorValues(
-        accent: UIColor(rgb:0x0DBD8B),
-        alert: UIColor(rgb:0xFF4B55),
-        primaryContent: UIColor(rgb:0xFFFFFF),
-        secondaryContent: UIColor(rgb:0xA9B2BC),
-        tertiaryContent: UIColor(rgb:0x8E99A4),
-        quarterlyContent: UIColor(rgb:0x6F7882),
-        quinaryContent: UIColor(rgb:0x394049),
-        separator: UIColor(rgb:0x21262C),
-        system: UIColor(rgb:0x21262C),
-        tile: UIColor(rgb:0x394049),
-        navigation: UIColor(rgb:0x21262C),
-        background: UIColor(rgb:0x15191E),
-        ems: UIColor(rgb: 0x7E69FF),
-        links: UIColor(rgb: 0x0086E6),
+        accent: UIColor(rgb:0xAB8CDF), // #AB8CDF
+        alert: UIColor(rgb:0xFF4B55), // #FF4B55
+        primaryContent: UIColor(rgb:0xFFFFFF), // #FFFFFF
+        secondaryContent: UIColor(rgb:0xA9B2BC), // #A9B2BC
+        tertiaryContent: UIColor(rgb:0x8E99A4), // #8E99A4
+        quarterlyContent: UIColor(rgb:0x6F7882), // #6F7882
+        quinaryContent: UIColor(rgb:0x394049), // #394049
+        separator: UIColor(rgb:0x21262C), // #21262C
+        system: UIColor(rgb:0x21262C), // #21262C
+        tile: UIColor(rgb:0x394049), // #394049
+        navigation: UIColor(rgb:0x21262C), // #21262C
+        background: UIColor(rgb:0x15191E), // #15191E
+        ems: UIColor(rgb:0x7E69FF), // #7E69FF
+        links: UIColor(rgb:0x0086E6), // #0086E6
         namesAndAvatars: [
-            UIColor(rgb:0x368BD6),
-            UIColor(rgb:0xAC3BA8),
-            UIColor(rgb:0x03B381),
-            UIColor(rgb:0xE64F7A),
-            UIColor(rgb:0xFF812D),
-            UIColor(rgb:0x2DC2C5),
-            UIColor(rgb:0x5C56F5),
-            UIColor(rgb:0x74D12C)
+            UIColor(rgb:0x368BD6), // #368BD6
+            UIColor(rgb:0xAC3BA8), // #AC3BA8
+            UIColor(rgb:0xAB8CDF), // #AB8CDF
+            UIColor(rgb:0xE64F7A), // #E64F7A
+            UIColor(rgb:0xFF812D), // #FF812D
+            UIColor(rgb:0xAB8CDF), // #AB8CDF
+            UIColor(rgb:0x5C56F5), // #5C56F5
+            UIColor(rgb:0xC8A2FF)  // #C8A2FF
         ]
+
     )
     
     public static var uiKit = ColorsUIKit(values: values)
