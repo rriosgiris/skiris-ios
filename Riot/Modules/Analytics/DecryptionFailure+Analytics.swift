@@ -12,21 +12,13 @@ extension DecryptionFailure {
     
     public func toAnalyticsEvent() -> AnalyticsEvent.Error {
         
-        let timeToDecryptMillis: Int = if let ttd = self.timeToDecrypt {
-            Int(ttd * 1000)
-        } else {
-            -1
-        }
-        
-        let isHistoricalEvent = if let localAge = self.eventLocalAgeMillis {
-            localAge < 0
-        } else { false }
-        
-        let errorName = if isHistoricalEvent && self.trustOwnIdentityAtTimeOfFailure == false {
-            AnalyticsEvent.Error.Name.HistoricalMessage
-        } else {
-            self.reason.errorName
-        }
+        let timeToDecryptMillis = self.timeToDecrypt != nil ? Int(self.timeToDecrypt! * 1000) : -1
+                
+                let isHistoricalEvent = self.eventLocalAgeMillis != nil ? (self.eventLocalAgeMillis! < 0) : false
+                
+                let errorName = (isHistoricalEvent && self.trustOwnIdentityAtTimeOfFailure == false)
+                    ? AnalyticsEvent.Error.Name.HistoricalMessage
+                    : self.reason.errorName
         
         return AnalyticsEvent.Error(
             context: self.context,
