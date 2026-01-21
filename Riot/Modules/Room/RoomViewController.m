@@ -1719,7 +1719,8 @@ static CGSize kThreadListBarButtonItemImageSize;
 - (UIBarButtonItem *)joinJitsiBarButtonItem
 {
     CallTileActionButton *button = [CallTileActionButton new];
-    [button setImage:AssetImages.callVideoIcon.image
+    // Use the audio call icon for the Jitsi group call button (UI-only change)
+    [button setImage:AssetImages.voiceCallHangonIcon.image
             forState:UIControlStateNormal];
     [button setTitle:[VectorL10n roomJoinGroupCall]
             forState:UIControlStateNormal];
